@@ -1,0 +1,37 @@
+@media  screen and (min-width: 768px) {
+  .tr-navbar {
+    .navbar-nav {
+      .nav-item {
+        .nav-link:not(.active):not(.logo):hover {
+          background-color: rgba(99, 42, 42, 0.7);
+        }
+      }
+    }
+  }
+  .accordion-btn-style:hover {
+    background: $accordion-btn-hover !important
+  }
+  .social-section__list a:hover {
+    background-color: $footer-color;
+    color: $second-text-color;
+  }
+  .tr-btn-started:not(:disabled):not(.loading):hover {
+    &:after {
+      width: 100%;
+    }
+    .fa-long-arrow-alt-right {
+      @include transform-scale(2);
+    }
+  }
+}
+@media  screen and (min-width: 992px) {
+  .tr-navbar {
+    .navbar-nav {
+      .nav-item {
+        .nav-link:not(.active):not(.logo):hover {
+          background-color: $second-color;
+        }
+      }
+    }
+  }
+}

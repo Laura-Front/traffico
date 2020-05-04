@@ -1,0 +1,256 @@
+/*-------------  sticky footer  ---------------------*/
+@media  screen and (min-width: 480px) {
+  .tr-header-title {
+    font-size: 50px!important;
+  }
+}
+
+@media  screen and (min-width: 768px) {
+  html, body {
+    height: 100%;
+  }
+  #page-wrap {
+    min-height: 100%;
+    margin-bottom: -150px;
+  }
+  #page-wrap:after {
+    content: "";
+    display: block;
+    height: 150px;
+  }
+  footer {
+    min-height: 150px;
+  }
+  .header,
+  .contact-section {
+    background: no-repeat center top;
+    background-size: cover;
+  }
+  .tr-header-title {
+    font-size: 80px!important;
+  }
+  .tr-container .tr-navbar {
+    .navbar-toggler {
+      border-color: $second-color !important;
+      .navbar-toggler-icon {
+        background-color: $second-color;
+      }
+    }
+  }
+}
+@media  screen and (min-width: 992px) {
+  body {
+    .mb-100 {
+      margin-bottom: 100px;
+    }
+  }
+  .tr-header-title {
+    font-size: 100px!important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .header {
+    height: 1185px;
+  }
+  .contact-section {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    height: 890px;
+  }
+  .tr-container .tr-navbar {
+    padding-top: 15px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 70px;
+    background-color: rgba(99, 42, 42, 0.6);
+    border-top: 1px solid white;
+    z-index: 2;
+    width: 100%;
+    .navbar-nav .nav-item {
+      margin-right: 0!important;
+      border-bottom: 1px solid #ffffff;
+      .nav-link {
+        width: 100% !important;
+        text-align: left !important;
+        padding-left: 20px !important;
+        border-radius: 0;
+        &.active {
+          background-color: rgba(99, 42, 42, 0.7) !important;
+          border-radius: 0;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .section-title__sytle {
+    margin-bottom: 10px;
+  }
+  .howto-section,
+  .faqs-section__desc-row {
+    margin-bottom: 100px;
+  }
+  .section-info__sytle {
+    padding: 20px;
+  }
+  .section-text__sytle {
+    margin-bottom: 30px;
+  }
+  .section-content__sytle {
+    font-size: 35px;
+  }
+  .faqs-section__accordion-row .tab .collapse {
+    margin-bottom: 0;
+  }
+  .faqs-section {
+    margin-bottom: 10px;
+    padding-bottom: 60px;
+  }
+  .contact-section {
+    &__form {
+      padding: 20px;
+      .form-group {
+        label {
+          margin-bottom: 0;
+        }
+        input.form-control {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .social-section {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header ,
+  .contact-section {
+    height: auto;
+    background-image: none !important;
+    background-color: $footer-color;
+  }
+  .tr-container .tr-navbar {
+    margin-bottom: 60px;
+    .navbar-collapse {
+      background-color: rgba(15, 38, 76, 0.6);
+      .navbar-nav .nav-item {
+        .nav-link {
+          &.active {
+            background-color: rgba(15, 38, 76, 0.7) !important;
+          }
+        }
+      }
+    }
+    .navbar-toggler {
+      border-color: #ffffff;
+    }
+  }
+  .about-section {
+    padding-top: 30px;
+  }
+  .howto-section {
+    margin-bottom: 0;
+    &__image {
+      margin-bottom: 40px;
+      text-align: center;
+      img {
+        max-width: 80%;
+      }
+    }
+    &__text {
+      max-width: 100%;
+    }
+  }
+  .faqs-section {
+    padding-top: 30px;
+    &__accordion-col {
+      max-width: 80%;
+      margin: auto;
+    }
+    &__desc-row {
+      margin-bottom: 50px;
+    }
+    .accordion-btn-style {
+      min-height: 70px!important;
+    }
+  }
+  .contact-section {
+    padding-bottom: 40px;
+    &__block {
+      padding-top: 0;
+    }
+    &__info {
+      background-color: rgba(254, 248, 245, 0.5);
+    }
+    &__form {
+      max-width: 100%;
+    }
+  }
+  .social-section__list {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .faqs-section__accordion-col {
+    max-width: 100%;
+    margin: auto;
+  }
+  .testimonials-section {
+    .carousel-cell {
+      padding: 20px 20px 110px;
+    }
+  }
+  .carousel-cell {
+    min-height: 300px!important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tr-container  {
+    .tr-navbar {
+      .navbar-brand {
+         width: 160px;
+       }
+    }
+  }
+  .section-text__sytle {
+    line-height: 30px;
+  }
+  .section-info__sytle {
+    border-left: 0;
+    border-top: 10px solid $base-color;
+  }
+  .howto-section {
+    &__image {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .accordion-btn-style {
+    padding: 5px 15px!important;
+    span.tab-style {
+      line-height: 20px!important;
+    }
+    &.btn-load span.tab-style::after {
+      right: 15px!important;
+    }
+  }
+  .faqs-section__content {
+    font-size: 28px;
+  }
+  .contact-section {
+    &__form {
+      text-align: center;
+    }
+  }
+}

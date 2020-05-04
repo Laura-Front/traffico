@@ -1,0 +1,8 @@
+@media print {
+  .hide-print {
+    display: none;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
