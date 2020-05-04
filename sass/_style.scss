@@ -50,50 +50,50 @@ strong {
     margin-bottom: 60px;
     line-height: 100%;
   }
-  .tr-btn-started {
+}
+.tr-btn-started {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  min-width: 220px;
+  height: 60px;
+  background-color: $second-color;
+  color: $second-text-color;
+  margin-bottom: 60px;
+  &:after {
+    content: '';
+    background: darken($second-color, 10%);
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+    @include transition(width, .5s, ease);
+  }
+  &:focus {
+    background-color: darken($second-color, 20%);
+  }
+  &:disabled {
+    background-color: #8f97ab;
+    color: #1b1e21;
+    cursor: not-allowed;
+  }
+  &.loading {
+    background: url(../images/gif/loader.gif) no-repeat center center $second-color;
+    text-indent: -999999px;
+    cursor: not-allowed;
+    transition: none!important;
+  }
+  .btn-text {
     position: relative;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 20px;
-    min-width: 220px;
-    height: 60px;
-    background-color: $second-color;
-    color: $second-text-color;
-    margin-bottom: 60px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     &:after {
-      content: '';
-      background: darken($second-color, 10%);
-      position: absolute;
-      height: 100%;
-      left: 0;
-      top: 0;
-      width: 0;
-      @include transition(width, .5s, ease);
-    }
-    &:focus {
-      background-color: darken($second-color, 20%);
-    }
-    &:disabled {
-      background-color: #8f97ab;
-      color: #1b1e21;
-      cursor: not-allowed;
-    }
-    &.loading {
-      background: url(../images/gif/loader.gif) no-repeat center center $second-color;
-      text-indent: -999999px;
-      cursor: not-allowed;
-      transition: none!important;
-    }
-    .btn-text {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      &:after {
-        content: '\2192';
-        font-size: 30px;
-      }
+      content: '\2192';
+      font-size: 30px;
     }
   }
 }
@@ -161,6 +161,7 @@ strong {
   }
   &__accordion-row {
     .tab {
+      display: none;
       background: $tabs-color;
       margin-bottom: 13px;
       @extend .box-style;
@@ -196,23 +197,6 @@ strong {
         &[aria-expanded="true"] span::after {
           content: "\2212";
         }
-        &.btn-load {
-          background: lighten($base-color, 20%);
-          span.tab-style {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 30px;
-            color: $base-color;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            justify-content: center;
-              &::after {
-              position: absolute;
-                right: 35px;
-            }
-          }
-        }
       }
       .card-body {
         padding: 40px 35px 60px;
@@ -224,6 +208,20 @@ strong {
       .collapse {
         margin-bottom: 60px;
       }
+    }
+  }
+  .btn-load-more {
+    background: lighten($base-color, 20%);
+    @extend .box-style;
+    min-height: 90px;
+    span.tab-style {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px;
+      color: $base-color;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
   }
 }
@@ -408,6 +406,36 @@ strong {
   &.hide {
     opacity: 0;
   }
+}
+
+.modal-content {
+  position: relative;
+  padding: 20px;
+  .close {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $second-color;
+    color: $second-text-color;
+    opacity: 1;
+    font-size: 30px;
+    &:hover {
+      opacity: 1!important;
+      font-size: 40px;
+    }
+  }
+  .modal-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-section__form {
+    padding: 20px;
+    @include box-shadow(0 8px 50px rgba(238, 77, 71, 0.87));
+  }
+
 }
 
 

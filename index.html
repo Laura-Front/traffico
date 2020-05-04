@@ -50,7 +50,7 @@
             <div class="row">
                 <div class="col-lg-8 col-md-10 text-center text-md-left">
                     <h1 class="tr-header-title">Your awesome traffic permit consultant</h1>
-                    <button type="button" class="btn tr-btn-started">
+                    <button type="button" class="btn tr-btn-started" data-toggle="modal" data-target="#getModal">
                         <span class="btn-text">GET STARTED </span>
                     </button>
                 </div>
@@ -249,19 +249,38 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="tab">
-                            <button type="button" class="btn accordion-btn-style w-100 btn-load"
+                            <button type="button" class="btn accordion-btn-style w-100"
                                     data-toggle="collapse"
-                                    data-target="#collapse_11"
+                                    data-target="#collapse_13"
                                     aria-expanded="false"
-                                    aria-controls="collapse_11">
-                                <span class="tab-style">LOAD MORE</span>
+                                    aria-controls="collapse_13">
+                                <span class="tab-style">How is the sample for a professional traffic permit booked?</span>
                             </button>
-                            <div class="collapse" id="collapse_11">
-
+                            <div class="collapse" id="collapse_13">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque earum inventore ipsam sequi, voluptate.
+                                </div>
                             </div>
                         </div>
+                        <div class="tab">
+                            <button type="button" class="btn accordion-btn-style w-100"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_14"
+                                    aria-expanded="false"
+                                    aria-controls="collapse_14">
+                                <span class="tab-style">How is the sample for a professional traffic permit booked?</span>
+                            </button>
+                            <div class="collapse" id="collapse_14">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque earum inventore ipsam sequi, voluptate.
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn w-100 btn-load-more">
+                            <span class="tab-style">LOAD MORE</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -387,6 +406,34 @@
         </div>
     </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="getModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="getModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body text-center">
+                <h4 class="modal-title" id="modalLabel">We provide traffic management consultants so you get started quickly, contact us for a quote today!</h4>
+                <form action="#" method="post" class="contact-section__form">
+                    <div class="form-group"><!-- if has error then add class form-error -->
+                        <label for="name-modal">Name</label>
+                        <input type="text" class="form-control" id="name-modal" placeholder="Your user name" required>
+                        <small class="form-text text-danger">Name is incorect</small>
+                    </div>
+                    <div class="form-group"><!-- if has error then add class form-error -->
+                        <label for="email-modal">Email address</label>
+                        <input type="email" class="form-control" id="email-modal"  placeholder="Your email address" required>
+                        <small class="form-text text-danger">Email is incorect</small>
+                    </div>
+                    <button type="submit" class="btn tr-btn-started"><!-- if has loading state add class loading, if disabled add attribute disabled -->
+                        <span class="btn-text">GET STARTED </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="scrollup-btn hide">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 1 32 32" id="arr1"><path d="M22.4 22.5C22.8 22.9 23.5 22.9 24 22.5L25.7 20.8C26.1 20.4 26.1 19.7 25.7 19.2L16.8 10.3C16.4 9.9 15.6 9.9 15.2 10.3L6.3 19.2C5.9 19.7 5.9 20.4 6.3 20.8L8 22.5C8.5 22.9 9.2 22.9 9.6 22.5L16 16.1 22.4 22.5Z"></path></svg>
 </div>

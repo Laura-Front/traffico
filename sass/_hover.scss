@@ -9,18 +9,19 @@
     }
   }
   .accordion-btn-style:hover {
-    background: $accordion-btn-hover !important
+    background: $accordion-btn-hover !important;
+  }
+  .btn-load-more:hover {
+    background: lighten($base-color, 10%)!important;
   }
   .social-section__list a:hover {
     background-color: $footer-color;
     color: $second-text-color;
   }
   .tr-btn-started:not(:disabled):not(.loading):hover {
+    color: white;
     &:after {
       width: 100%;
-    }
-    .fa-long-arrow-alt-right {
-      @include transform-scale(2);
     }
   }
 }

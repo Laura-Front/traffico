@@ -241,9 +241,6 @@
     span.tab-style {
       line-height: 20px!important;
     }
-    &.btn-load span.tab-style::after {
-      right: 15px!important;
-    }
   }
   .faqs-section__content {
     font-size: 28px;
@@ -252,5 +249,8 @@
     &__form {
       text-align: center;
     }
+  }
+  .modal-content {;
+    padding: 0;
   }
 }

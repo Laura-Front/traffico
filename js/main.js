@@ -37,3 +37,12 @@ $scrollbtn.click(function () {
         scrollTop: 0
     },500)
 });
+
+// Load more
+$(".tab").slice(0,10).show();
+$(".btn-load-more").click(function(e){
+    $(".tab:hidden").slice(0,1).fadeIn("slow");
+    if($(".tab:hidden").length == 0){
+        $(".btn-load-more").fadeOut("slow");
+    }
+});
