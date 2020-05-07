@@ -1,10 +1,8 @@
-/*-------------  sticky footer  ---------------------*/
 @media  screen and (min-width: 480px) {
   .tr-header-title {
     font-size: 50px!important;
   }
 }
-
 @media  screen and (min-width: 768px) {
   html, body {
     height: 100%;
@@ -47,11 +45,8 @@
   .tr-header-title {
     font-size: 100px!important;
   }
-}
-
-@media screen and (max-width: 1600px) {
   .header {
-    height: 1185px;
+    height: 1365px;
   }
   .contact-section {
     height: 650px;
@@ -129,7 +124,6 @@
     padding-bottom: 30px;
   }
 }
-
 @media screen and (max-width: 767px) {
   .header ,
   .contact-section {
@@ -198,7 +192,6 @@
     margin-right: 0;
   }
 }
-
 @media screen and (max-width: 550px) {
   .faqs-section__accordion-col {
     max-width: 100%;
@@ -213,7 +206,6 @@
     min-height: 300px!important;
   }
 }
-
 @media screen and (max-width: 480px) {
   .tr-container  {
     .tr-navbar {
